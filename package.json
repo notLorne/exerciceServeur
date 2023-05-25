@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "naruto-name-generator": "^2.0.7",
+    "node": "^20.2.0",
+    "nodemon": "^2.0.22"
+  },
+  "name": "exerciceserveur",
+  "version": "1.0.0",
+  "description": "ex serv",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
