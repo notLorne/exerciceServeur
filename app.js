@@ -12,9 +12,9 @@ app.get('/confirm', (req, res) => {
     console.log(__dirname);
   })
 
-app.get('/connection/:uname-:psw', (req, res) => {
-    var uname = req.params.uname;
-    var psw = req.params.psw;
+app.post('/connection', (req, res) => {
+    var uname = req.body.uname;
+    var psw = req.body.psw;
     //res.status(401).send('code 401 (Unauthorized)')
     if( uname == "admin" || psw == "12345" ) {
         res.sendFile(__dirname + "/naruto.html")
