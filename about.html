@@ -17,9 +17,9 @@
         La satisfaction de nos clients est notre priorité absolue. Nous croyons en une approche centrée sur le client, en établissant des relations solides et durables avec nos partenaires commerciaux. Nous nous efforçons de comprendre leurs besoins spécifiques afin de leur offrir des solutions personnalisées qui dépassent leurs attentes.
     </p>
 
-    <label for="email">inscrire votre courriel afin de
+    <label>inscrire votre courriel afin de
         s’enregistrer aux différentes promotions offertes par la compagnie</label> <br>
-    <input type="email" id="email" name="email"> 
+    <input type="email" id="email" name="email">  <br>
     <button type="button" onclick="myFunction()">inscrire</button>
 
     <script>
@@ -28,5 +28,19 @@
     }
     
     </script>
+
+    <form action="/connection" method="post">
+
+    
+        <div class="container">
+        <label><b>Username</b></label>
+        <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label><b>Password</b></label>
+        <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit">connexion</button>
+        </div>
+    </form> 
 </body>
 </html>

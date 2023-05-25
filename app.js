@@ -11,7 +11,18 @@ app.get('/confirm', (req, res) => {
     res.sendFile(__dirname + "/confirm.html")
     console.log(__dirname);
   })
-  
-  app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+
+app.get('/connection/:uname-:psw', (req, res) => {
+    var uname = req.params.uname;
+    var psw = req.params.psw;
+    //res.status(401).send('code 401 (Unauthorized)')
+    if( uname == "admin" || psw == "12345" ) {
+        res.sendFile(__dirname + "/naruto.html")
+    } else {
+        res.status(401).send('code 401 (Unauthorized)')
+    }
   })
+  
+app.listen(port, () => {
+console.log(`Example app listening on port ${port}`)
+})
